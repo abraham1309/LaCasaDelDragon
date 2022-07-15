@@ -1,0 +1,311 @@
+@font-face {
+    font-family: "roboto";
+    src: url("../tipografia/RobotoCondensed-Regular.ttf");
+}
+
+body {
+    /* overflow: hidden; */
+}
+
+.seccion-escritorio {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
+.seccion-escritorio .div-imagen-principal {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-escritorio .div-imagen-principal .div-imagen {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-escritorio .div-imagen-principal .div-imagen button {
+    position: absolute;
+    margin-top: 15%;
+    height: 50px;
+    width: 225px;
+    border: none;
+    border-radius: 7px;
+    background-color: #cba482;
+    color: #fff;
+    font-family: 'roboto';
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.seccion-escritorio .div-imagen-principal .div-imagen img {
+    width: 90%;
+}
+
+footer {
+    height: 10%;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+footer p {
+    font-size: 19px;
+    font-family: 'roboto';
+    text-align: center;
+}
+
+@media (max-width: 850px) {
+    .seccion-escritorio .div-imagen-principal .div-imagen {
+        width: 90%;
+    }
+    .seccion-escritorio .div-imagen-principal .div-imagen img {
+        width: 100%;
+    }
+    .seccion-escritorio .div-imagen-principal .div-imagen button {
+        height: 40px;
+        width: 200px;
+        font-size: 25px;
+    }
+}
+
+.seccion-movil {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+}
+
+.seccion-movil .div-cuerpo {
+    width: 100%;
+    height: 90%;
+}
+
+.seccion-movil .div-cuerpo .div-titulo {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-movil .div-cuerpo .div-titulo img {
+    width: 95%;
+}
+
+.seccion-movil .div-cuerpo .div-imagen-principal-movil {
+    width: 100%;
+    height: 85%;
+}
+
+.seccion-movil .div-cuerpo .div-imagen-principal-movil {
+    width: 100%;
+}
+
+.seccion-movil .div-cuerpo .div-imagen-principal-movil {
+    width: 100%;
+}
+
+.seccion-movil .div-cuerpo .div-imagen-principal-movil .div-imagen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-movil .div-cuerpo .div-imagen-principal-movil .div-imagen .imagen-principal {
+    width: 75%;
+}
+
+.seccion-movil .div-cuerpo .div-imagen-principal-movil .div-imagen .div-boton-img {
+    width: 100%;
+    position: absolute;
+    margin-top: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-movil .div-cuerpo .div-imagen-principal-movil .div-imagen .div-boton-img img {
+    width: 75%;
+}
+
+.seccion-movil .div-cuerpo .div-imagen-principal-movil .div-imagen .div-boton-img button {
+    height: 50px;
+    width: 225px;
+    border: none;
+    border-radius: 7px;
+    background-color: #cba482;
+    color: #fff;
+    font-family: 'roboto';
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .seccion-escritorio {
+        display: none;
+    }
+    .seccion-movil {
+        display: flex;
+    }
+}
+
+@media (max-width: 450px) {
+    .seccion-movil .div-cuerpo .div-imagen-principal-movil .div-imagen .imagen-principal {
+        width: 100%;
+    }
+    .seccion-movil .div-cuerpo .div-imagen-principal-movil .div-imagen .div-boton-img {
+        margin-top: 90%;
+    }
+    .seccion-movil .div-cuerpo .div-imagen-principal-movil .div-imagen .div-boton-img img {
+        width: 95%;
+    }
+}
+
+
+/* Estilos para la pagina de streaming */
+
+.seccion-general {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.seccion-general .div-general {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-general .div-general .div-titulo {
+    width: 100%;
+    height: 23%;
+}
+
+.seccion-general .div-general .div-titulo .div-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-general .div-general .div-titulo .div-img img {
+    width: 40%;
+}
+
+.seccion-general .div-general .div-cuerpo {
+    width: 95%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seccion-general .div-general .div-cuerpo .div-video {
+    width: 55%;
+    height: 100%;
+}
+
+.seccion-general .div-general .div-cuerpo .div-video iframe {
+    width: 100%;
+    border: 5px solid #cba482;
+    border-radius: 20px;
+}
+
+.seccion-general .div-general .div-cuerpo .div-comentarios {
+    width: 40%;
+    height: 100%;
+}
+
+.seccion-general .div-general .div-cuerpo .div-comentarios iframe {
+    width: 100%;
+}
+
+.seccion-general .div-general .div-footer {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.seccion-general .div-general .div-footer p {
+    font-size: 19px;
+    font-family: 'roboto';
+    text-align: center;
+}
+
+.seccion-general .div-fondo {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/Fond0\(2\)-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+}
+
+@media (max-width: 767px) {
+    .seccion-general .div-general .div-titulo {
+        height: 15%;
+    }
+    .seccion-general .div-general .div-titulo .div-img img {
+        width: 50%;
+    }
+    .seccion-general .div-general .div-cuerpo {
+        flex-direction: column;
+        height: 72%;
+    }
+    .seccion-general .div-general .div-cuerpo .div-video {
+        width: 90%;
+        height: 50%;
+    }
+    .seccion-general .div-general .div-cuerpo .div-comentarios {
+        width: 90%;
+        height: 45%;
+    }
+}
+
+@media (max-width: 450px) {
+    .seccion-general .div-general .div-titulo .div-img img {
+        width: 90%;
+    }
+    .seccion-general .div-general .div-cuerpo {
+        width: 95%;
+    }
+    .seccion-general .div-general .div-cuerpo .div-video {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .seccion-general .div-general .div-cuerpo .div-video iframe {
+        width: 95%;
+    }
+    .seccion-general .div-general .div-cuerpo .div-comentarios {
+        width: 90%;
+        height: 50%;
+    }
+}
