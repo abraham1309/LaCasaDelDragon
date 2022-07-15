@@ -181,7 +181,6 @@ footer p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    z-index: -1;
 }
 
 .seccion-general .div-general {
@@ -293,6 +292,6 @@ footer p {
     }
     .seccion-general .div-general .div-cuerpo .div-comentarios {
         width: 90%;
-        height: 50%;
+        height: 58%;
     }
 }
