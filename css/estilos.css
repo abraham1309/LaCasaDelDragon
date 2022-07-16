@@ -87,23 +87,22 @@ footer p {
 
 .seccion-movil .div-cuerpo .div-titulo {
     width: 100%;
-    height: 15%;
+    height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 
 .seccion-movil .div-cuerpo .div-titulo img {
     width: 95%;
+    z-index: 1000;
 }
 
 .seccion-movil .div-cuerpo .div-imagen-principal-movil {
     width: 100%;
-    height: 85%;
-}
-
-.seccion-movil .div-cuerpo .div-imagen-principal-movil {
-    width: 100%;
+    height: 73%;
+    z-index: -1;
 }
 
 .seccion-movil .div-cuerpo .div-imagen-principal-movil {
@@ -169,6 +168,9 @@ footer p {
     .seccion-movil .div-cuerpo .div-imagen-principal-movil .div-imagen .div-boton-img img {
         width: 95%;
     }
+    footer p {
+        font-size: 15px;
+    }
 }
 
 
@@ -211,25 +213,27 @@ footer p {
 
 .seccion-general .div-general .div-cuerpo {
     width: 95%;
-    height: 60%;
+    height: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    margin-top: -3%;
 }
 
 .seccion-general .div-general .div-cuerpo .div-video {
-    width: 55%;
+    width: 45%;
     height: 100%;
 }
 
 .seccion-general .div-general .div-cuerpo .div-video iframe {
     width: 100%;
+    height: 98%;
     border: 5px solid #cba482;
     border-radius: 20px;
 }
 
 .seccion-general .div-general .div-cuerpo .div-comentarios {
-    width: 40%;
+    width: 35%;
     height: 100%;
 }
 
@@ -289,9 +293,148 @@ footer p {
     }
     .seccion-general .div-general .div-cuerpo .div-video iframe {
         width: 95%;
+        border: 3px solid #cba482;
     }
     .seccion-general .div-general .div-cuerpo .div-comentarios {
         width: 90%;
         height: 58%;
+    }
+    .seccion-general .div-general .div-footer p {
+        font-size: 15px;
+    }
+}
+
+
+/* Estilos para las pantallas de error */
+
+.seccion-general-error {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("../images/Fondo\ \(3\)-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.seccion-general-error .div-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-general-error .div-texto .p-1 {
+    margin-top: 0;
+    margin-bottom: 10%;
+    text-align: center;
+    font-family: 'roboto';
+    font-size: 80px;
+    color: #bd946f;
+    font-weight: bold;
+    line-height: 0px;
+}
+
+.seccion-general-error .div-texto .p-2 {
+    text-align: center;
+    font-family: 'roboto';
+    font-size: 30px;
+    color: #bd946f;
+    line-height: 0px;
+}
+
+.seccion-general-error .div-footer {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.seccion-general-error .div-footer p {
+    font-size: 19px;
+    font-family: 'roboto';
+    text-align: center;
+}
+
+@media (max-width: 450px) {
+    .seccion-general-error .div-texto {
+        width: 90%;
+    }
+    .seccion-general-error .div-texto .p-1 {
+        margin-bottom: 7%;
+        font-size: 70px;
+        line-height: 0px;
+    }
+    .seccion-general-error .div-texto .p-2 {
+        width: 90%;
+        font-size: 25px;
+        line-height: 22px;
+    }
+    .seccion-general-error .div-footer p {
+        font-size: 15px;
+    }
+}
+
+
+/* Estilos para la pantalla de incio */
+
+.seccion-general-error .div-texto img {
+    width: 80%;
+}
+
+.seccion-general-error .div-texto .p-aviso {
+    font-size: 45px;
+}
+
+@media (max-width: 550px) {
+    .seccion-general-error .div-texto img {
+        width: 90%;
+    }
+    .seccion-general-error .div-texto .p-aviso {
+        width: 90%;
+        font-size: 25px;
+    }
+}
+
+
+/* Estilos para la pantalla de problemas tecnicos */
+
+.seccion-general-error .div-texto .p-problemas {
+    font-size: 40px;
+}
+
+.seccion-general-error .div-texto .p-problemas-2 {
+    margin-top: 1%;
+}
+
+@media (max-width: 450px) {
+    .seccion-general-error .div-texto .p-problemas {
+        width: 100% !important;
+        font-size: 28px;
+    }
+    .seccion-general-error .div-texto .p-problemas-2 {
+        margin-top: -5%;
+    }
+}
+
+
+/* Estilos para la pantalla de agradecimiento */
+
+.seccion-general-error .div-texto .p-gracias {
+    line-height: 60px;
+    font-size: 60px;
+}
+
+@media (max-width: 450px) {
+    .seccion-general-error .div-texto .p-gracias {
+        line-height: 35px;
+        font-size: 35px;
     }
 }
