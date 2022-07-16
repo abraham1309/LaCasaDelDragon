@@ -438,3 +438,5 @@ footer p {
         font-size: 35px;
     }
 }
+
+@media (max-width: 450px) {}
